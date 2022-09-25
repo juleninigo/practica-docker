@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  ubuntu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./website:/var/www/html
+    ports:
+      - "5000:80"
